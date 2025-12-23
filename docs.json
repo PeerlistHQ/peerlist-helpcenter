@@ -4,9 +4,9 @@
   "name": "Peerlist help center",
   "description": "Peerlist is a professional network where you can showcase your proof of work, and get hired by the best companies.",
   "colors": {
-    "primary": "#4F39F6",
-    "light": "#7C86FF",
-    "dark": "#432DD7"
+    "primary": "#00AA45",
+    "light": "#00AA45",
+    "dark": "#00AA45"
   },
   "favicon": "/favicon.ico",
   "navigation": {
@@ -17,7 +17,8 @@
           {
             "group": "Getting Started",
             "pages": [
-              "/index"
+              "/individual/getting-started/introduction",
+              "/individual/getting-started/mobile-app"
             ]
           }
           
