@@ -20,6 +20,29 @@
               "/individual/getting-started/introduction",
               "/individual/getting-started/mobile-app"
             ]
+          },
+          {
+            "group": "Profile",
+            "pages": [
+              {
+                "group": "Individual Profile",
+                "pages": [
+                  "/individual/peerlist-profile/how-to-create-peerlist-profile/index",
+                  "/individual/peerlist-profile/how-to-create-peerlist-profile/how-to-showcase-my-work-on-my-peerlist-profile",
+                  "/individual/peerlist-profile/how-to-create-peerlist-profile/projects",
+                  "/individual/peerlist-profile/how-to-create-peerlist-profile/resume"
+                ]
+
+              },
+              "/individual/peerlist-profile/custom-domain",
+              {
+                "group": "Verification",
+                "pages": [
+                  "/individual/peerlist-profile/verification/index"
+                ]
+              },
+              "/individual/peerlist-profile/faqs"
+            ]
           }
           
         ]
