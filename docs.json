@@ -38,7 +38,10 @@
               {
                 "group": "Verification",
                 "pages": [
-                  "/individual/peerlist-profile/verification/index"
+                  "/individual/peerlist-profile/verification/index",
+                  "/individual/peerlist-profile/verification/identity",
+                  "/individual/peerlist-profile/verification/workplace",
+                  "/individual/peerlist-profile/verification/education"
                 ]
               },
               "/individual/peerlist-profile/faqs"
