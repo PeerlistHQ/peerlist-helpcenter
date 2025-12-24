@@ -73,8 +73,16 @@
             "group": "Profile",
             "pages": [
               "/company/profile/create-profile",
+              {
+                "group": "Bootcamp Profile",
+                "pages": [
+                  "/company/profile/bootcamp-profile/introducation",
+                  "/company/profile/bootcamp-profile/courses"
+                ]
+              },
               "/company/profile/faqs"
             ]
+            
           },
           {
             "group": "Hiring / Jobs",
