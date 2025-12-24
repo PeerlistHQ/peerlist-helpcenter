@@ -15,13 +15,6 @@
         "tab": "Individual",
         "groups": [
           {
-            "group": "Getting Started",
-            "pages": [
-              "/individual/getting-started/introduction",
-              "/individual/getting-started/mobile-app"
-            ]
-          },
-          {
             "group": "Profile",
             "pages": [
               {
@@ -45,6 +38,73 @@
                 ]
               },
               "/individual/peerlist-profile/faqs"
+            ]
+          },
+          {
+            "group": "Launchpad",
+            "pages": [
+              "/individual/launchpad/introduction",
+              "/individual/launchpad/guidelines-faqs",
+              "/individual/launchpad/how-to-launch-a-project-on-peerlist-launchpad",
+              "/individual/launchpad/what-are-staff-picks",
+              "/individual/launchpad/frequently-asked-questions-about-spotlight-by-peerlist"
+            ]
+          },
+          {
+            "group": "Scroll",
+            "pages": [
+              "/individual/scroll/what-can-i-post-on-peerlist-scroll"
+            ]
+          },
+          {
+            "group": "Others",
+            "pages": [
+              "/individual/referrral-program-terms-and-conditions",
+              "/individual/peerlist-streaks"
+            ]
+          }
+          
+        ]
+      },
+      {
+        "tab": "Company",
+        "groups": [
+          {
+            "group": "Profile",
+            "pages": [
+              "/company/profile/create-profile",
+              {
+                "group": "Bootcamp Profile",
+                "pages": [
+                  "/company/profile/bootcamp-profile/introducation",
+                  "/company/profile/bootcamp-profile/courses"
+                ]
+              },
+              "/company/profile/faqs"
+            ]
+            
+          },
+          {
+            "group": "Hiring / Jobs",
+            "pages": [
+              "/company/hiring-jobs/post-a-job",
+              "/company/hiring-jobs/career-site"
+              
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Legal",
+        "groups": [
+          {
+            "group": "Legal",
+            "pages": [
+              "/legal/terms-and-conditions",
+              "/legal/privacy-policy",
+              "/legal/code-of-conduct",
+              "/legal/content-policies"
+              
             ]
           }
           
