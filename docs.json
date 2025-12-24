@@ -66,17 +66,17 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@autosend.com"
+        "href": "mailto:support@peerlist.io"
       },
       {
         "label": "Login",
-        "href": "https://autosend.com/login"
+        "href": "https://peerlist.io/login"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Create Profile",
-      "href": "https://autosend.com/signup"
+      "href": "https://peerlist.io/signup"
     }
   },
   "contextual": {
@@ -93,7 +93,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/AutoSendEmail",
+      "x": "https://x.com/peerlist",
       "github": "https://github.com/peerlisthq"
     }
   }
