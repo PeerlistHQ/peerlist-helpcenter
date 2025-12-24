@@ -1,0 +1,69 @@
+---
+title: 'Custom Domain'
+description: 'Peerlist now offers custom domain integration, allowing you to host your Peerlist profile on your personal domain and use it as your portfolio.'
+sidebarTitle: 'Custom Domain'
+---
+
+import { PEERLIST_EXTERNAL_LINKS } from '/snippets/custom-variables.mdx'
+
+<Frame>
+  <img src="/images/custom-domain/home.png" />
+</Frame>
+
+
+## **Step-by-step guide to integrate custom domain.**
+
+<Steps>
+  <Step title="Open the right side panel menu">
+    Open the right side panel menu by clicking on your profile picture in top-right corner.
+  </Step>
+  <Step title="Click on Custom Domain option">
+    Click on Custom Domain option. You can directly open the settings by going to this link — <a href={PEERLIST_EXTERNAL_LINKS.customDomain} target='_blank' rel='noopener noreferrer'>{PEERLIST_EXTERNAL_LINKS.customDomain}</a>
+
+    <Frame>
+      <img src="/images/custom-domain/click-on-custom-domain.png" />
+    </Frame>
+  </Step>
+  <Step title="Enter your domain name">
+    Enter your domain name and click on **Add domain** — You will be redirected to Stripe for payment
+
+    <Frame>
+      <img src="/images/custom-domain/enter-domain-details.png" />
+    </Frame>
+  </Step>
+  <Step title="Verify domain ownership">
+    To verify domain ownership, please add the TXT record to your domain. Once added, click on **Verify Ownership**.
+
+    Note: It may take anywhere between 30-60 minutes for domain propagation.
+
+    <Frame>
+      <img src="/images/custom-domain/verify-domain-ownership.png" />
+    </Frame>
+  </Step>
+  <Step title="Add A or CNAME record">
+    Add A or CNAME record to your DNS settings. Once added, click on **Check Configuration**.
+  </Step>
+</Steps>
+
+***
+
+## **Troubleshooting**
+
+<Frame>
+  <img src="/images/custom-domain/domain-dns.png" />
+</Frame>
+
+If your custom domain configuration page appears incomplete with missing information in the DNS record tables (as shown in the screenshot), your domain may have been connected using a legacy method that's no longer fully supported.
+
+### How to resolve this issue
+
+1. Disconnect your current domain: Click the trash icon (🗑️) located next to your domain name "http://your-domain.com" at the top of the page.
+
+2. Reconnect your domain: Start the domain connection process again.\
+   This will generate the proper TXT, A, and CNAME records needed for verification and configuration.
+
+3. Follow the three-step process:
+
+   Step 1: Add your domain\
+   Step 2: Verify ownership by adding the provided TXT record to your DNS provider\
+   Step 3: Configure your domain by adding either the recommended A record or alternative CNAME record.

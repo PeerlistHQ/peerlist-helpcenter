@@ -1,0 +1,79 @@
+---
+title: 'Workplace Verification'
+description: 'How to verify workplace on Peerlist?'
+sidebarTitle: 'Workplace'
+---
+
+import { NO_REPLY_EMAIL, SUPPORT_EMAIL } from '/snippets/custom-variables.mdx'
+import { PEERLIST_EXTERNAL_LINKS } from '/snippets/custom-variables.mdx'
+
+You can verify your **current** workplace by providing your work email associated with the company/organization.
+
+
+<Note>
+Before you continue, please note;
+
+ - You can verify only the current workplace.
+ - You need to have work email associated with the company.
+ - Student email id cannot be used to verify workplace except faculty.
+ - Verification through documents such as offer letter, salary slips, or any other misc document cannot be used for workplace verification.
+
+If your company has a profile on Peerlist, the admin can verify your association with it. This also allows your past workplaces to be verified.
+
+</Note>
+
+
+## Steps to verify your workplace on Peerlist
+
+
+<Steps>
+<Step title="Open Manage Verification modal">
+Open the drawer menu by clicking on your profile picture at top-right corner and click on  <a href={PEERLIST_EXTERNAL_LINKS.verification} target='_blank' rel='noopener noreferrer'>Verification</a>. Here’s a direct link link to open this modal, make sure you’re logged in — <a href={PEERLIST_EXTERNAL_LINKS.verification} target='_blank' rel='noopener noreferrer'>{PEERLIST_EXTERNAL_LINKS.verification}</a>
+<Frame>
+    <img src='/images/workplace-verify/verification-modal.png' />
+</Frame>
+
+</Step>
+<Step title="Click on Workplace option">
+If you don’t see this option, that means: There is no present workplace added on your resume tab. Refer the screenshot below. 
+<Frame>
+<img src='/images/workplace-verify/workplace-to-verify.png' />
+</Frame>
+</Step>
+
+<Step>
+Fill out or recheck all the information along with your work email prefix. You can select the correct email domain from the dropdown. Click Verify Work Email.
+
+<Frame>
+<img src='/images/workplace-verify/verify-modal.png' />
+</Frame>
+</Step>
+
+<Step>
+A verification code will be sent to your work email. Enter the code and you will be verified 🎉.
+</Step>
+</Steps>
+
+--- 
+In case you don’t see your email domain in the dropdown. Follow these steps:
+
+
+ 1. Click on Can’t find my email domain.
+ <Frame>
+    <img src='/images/workplace-verify/no-found-domain.png' />
+ </Frame>    
+ 2. Enter your full work email and click on **Verify Work Email.**
+ 3. A verification code will be sent to your student email. Enter the code and submit your verification request.
+ 4. Once submitted, you will receive an update via email in 24-48 hours whether your verification request got approved or rejected.
+---
+## Possible errors while verifying workplace
+<AccordionGroup>
+  <Accordion title="Work email already used by other account.">
+  It's possible that you may have created another account using your work email. Please log in to that account and delete it before proceeding with your verification.
+  </Accordion>
+  <Accordion title="Not getting verification code.">
+   - Some companies use firewall which blocks receiving emails from outside. In such case, try adding <a href={`mailto:${NO_REPLY_EMAIL}`} target='_blank' rel='noopener noreferrer'>{NO_REPLY_EMAIL}</a> to your contact and resend verification code.
+   - Check your spam folder.
+   - If the issue still persist, please contact <a href={`mailto:${SUPPORT_EMAIL}`} target='_blank' rel='noopener noreferrer'>{SUPPORT_EMAIL}</a>
+  </Accordion>
+</AccordionGroup>

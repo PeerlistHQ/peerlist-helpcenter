@@ -1,0 +1,120 @@
+---
+title: 'Identity Verification on Peerlist'
+description: 'Verify your Peerlist account by providing a government-issued ID.'
+sidebarTitle: 'Identity'
+---
+
+import { STRIPE_IDENTITY ,PEERLIST_EXTERNAL_LINKS ,BIOMETRIC_IDENTIFIER ,STRIPE ,STRIPE_SUBSCRIPTIONS ,STRIPE_PERMISSIONS ,STRIPE_COMMON_QUESTIONS,STRIPE_DOCUMENT_AVAILABILITY,STRIPE_VERIFICATION_CONSENT,STRIPE_DATA_TRANSFERS,STRIPE_ACCESS_VERIFICATION_RESULTS,STRIPE_SERVICE_PROVIDERS_LEGAL } from '/snippets/custom-variables.mdx'
+import { APP_PATHS } from '/snippets/appPaths.mdx'
+import { SUPPORT_EMAIL } from '/snippets/custom-variables.mdx'
+
+<Frame>
+    <img src="/images/id-verify/home.png" />
+ </Frame>
+
+ ## What is Identity Verification?
+Identity verification confirms that a member's government-issued ID has been authenticated by Peerlist’s trusted verification partner (<a href={STRIPE_IDENTITY} target='_blank' rel='noopener noreferrer'>{STRIPE_IDENTITY}</a>).
+
+<Info>
+  Identity Verification is not a mandatory step to create and complete your Peerlist profile. You can opt for <a href={APP_PATHS.verificationWorkplace} target='_blank' rel='noopener noreferrer'>Workplace</a> and/or <a href={APP_PATHS.verificationEducation} target='_blank' rel='noopener noreferrer'>Education</a> verification for free and get access to exclusive features.
+
+</Info>
+
+
+## How to Verify Identity on Peerlist?
+ - Manage Verification modal: Open the right drawer menu by clicking on your profile picture on top-right and click on Verification or directly go to <a href={PEERLIST_EXTERNAL_LINKS.verification} target='_blank' rel='noopener noreferrer'>{PEERLIST_EXTERNAL_LINKS.verification}</a>
+  You can open it by clicking on your display name on your profile.
+    <Frame>
+        <img src="/images/id-verify/how-to-verify-identity.gif" />
+    </Frame>
+
+ - Click on Identity.
+ - It will open the identity verification modal.
+    <Frame>
+        <img src="/images/id-verify/payment-modal.png" />
+    </Frame>
+
+ - Read the instructions carefully, accept the terms, provide consent, and continue.
+ - Click on Get Verified It will redirect you to Stripe.
+ - Return back to the modal and click on Get Verified button again.
+ - You will be redirected to Stripe Identity for verification flow.
+ - Keep your government-issue identity card ready.
+ - After completing the verification process, the outcome will be either Verified or Under Review, depending on the submitted document and whether additional scrutiny is required.
+ - In case of Under Review; you will hear about the verification status within 24 hours.
+
+ --- 
+
+ ### Why is Identity Verification Chargeable?
+ 
+ - We charge a nominal one-time fee for identity verification, and here’s why:
+ - Ensuring Quality and Security: Identity verification is a critical and resource-intensive process, requiring robust measures to maintain accuracy, privacy, and security.
+ - Encouraging Serious Usage: Introducing a fee ensures that only serious users access this feature, maintaining its integrity and value.
+ - Preventing Abuse: A fee helps deter casual misuse that could jeopardize our partnership with the identity verification service provider, ensuring the feature remains available for everyone.
+
+ ---
+
+## FAQs
+
+<AccordionGroup>
+  <Accordion title="How does identity verification work?">
+    Peerlist Inc. works with <a href={STRIPE} target='_blank' rel='noopener noreferrer'>Stripe</a> to conduct identity verification online. Stripe builds technology that's used by millions of companies around the world such as Amazon, Google, and Zoom. Stripe helps with everything from accepting payments to managing <a href={STRIPE_SUBSCRIPTIONS} target='_blank' rel='noopener noreferrer'>subscriptions</a> to verifying identities.
+
+    Stripe helps Peerlist Inc. confirm your identity by conducting the following checks:
+
+     1. **Stripe captures images of the front and back of your government-issued photo ID and reviews it to make sure that the document is authentic**. They've built an automated identity verification technology that looks for patterns to help determine if an ID document is real or fake. This process is like a bank teller checking your ID document to confirm that it's real.
+
+     2. **Stripe captures photos of your face and reviews them to confirm that the photo ID belongs to you**. It has built automated identity verification technology that uses distinctive physiological characteristics of your face (known as <a href={BIOMETRIC_IDENTIFIER} target='_blank' rel='noopener noreferrer'>biometric identifiers</a>) to match the photos of your face with the photo on the ID document. This process is similar to a bank teller confirming that the photo on your ID document is you based on your appearance – but it's a higher-tech and more accurate way to identify you as a unique person.
+
+     3. **Stripe collects your name, date of birth, and government ID number, and validates that it's real**. They'll check this information against a global set of databases to confirm that it exists.
+
+    Stripe asks for your consent before collecting and using your biometric information. It'll only use your verification data in accordance with the <a href={STRIPE_PERMISSIONS} target='_blank' rel='noopener noreferrer'>permissions</a> you grant before starting the verification process, and based on its Privacy Policy.
+
+    Learn more about how <a href={STRIPE_COMMON_QUESTIONS} target='_blank' rel='noopener noreferrer'>handles and stores your data.</a> 
+  </Accordion>
+
+  <Accordion title="What are the best practices for successful verification?">
+    Before starting the verification process, here's what you need:
+
+     - **A valid government-issued photo ID document**. Not a photocopy or a picture of an ID document. Make sure that the ID document hasn't expired.
+     - **A device with a camera – use a mobile device if possible**. Cameras on mobile devices typically take higher-quality photos than a webcam.
+
+    The quality of the images you capture affects success rates dramatically. Below are a few best practices to help make sure that your verification succeeds:
+
+     - **Capture a clear image**. Make sure that the images aren't too dark or bright, and don't have a glare. Hold steady and allow your camera to focus to avoid blurry photos.
+     - **Don't block any part of your ID document in the image**. Ideally you should lay it flat to take the photo.
+     - **Don't block any part of your face**. Remove sunglasses, masks, or other accessories.
+     - **Find a location with ambient lighting**. Avoid spaces with strong overhead lights that cast a shadow on your face or ID document. Avoid sitting directly in front of a bright light which can wash out your face and add a glare to your ID document.
+  </Accordion>
+
+  <Accordion title="Which countries are supported for identity verification?">
+    Document checks are available for most government issued documents (national IDs, driving licences and passports) from . <a href={STRIPE_DOCUMENT_AVAILABILITY} target='_blank' rel='noopener noreferrer'>these countries</a>
+  </Accordion>
+
+  <Accordion title="How can I delete my submitted identity data?">
+    You can request for deleting your identity verification data by simply sending an email to <a href={`mailto:${SUPPORT_EMAIL}`} target='_blank' rel='noopener noreferrer'>{SUPPORT_EMAIL}</a>. Upon receiving a verifiable deletion request, Peerlist will completely delete your data within 72 hours.
+
+    As a reminder, if you gave only consent for Stripe to <a href={STRIPE_VERIFICATION_CONSENT} target='_blank' rel='noopener noreferrer'>verify your identity</a> and for fraud and security purposes, the biometric identifiers used to make the initial verification are fully removed from their systems within one year. If you gave consent to <a href={STRIPE_VERIFICATION_CONSENT} target='_blank' rel='noopener noreferrer'>improve Stripe's verification technology</a>, the biometric identifiers that are occasionally created to improve Stripe systems likewise within one year of creation.
+  </Accordion>
+
+  <Accordion title="How are you keeping my verification data safe?">
+    When you initiate the identity verification process Stripe Identity, Peerlist only receives the final verification status—either "`cancelled`," "`verified`," or "`failed`"—after you complete the process. We only store the verification status in your own database. This means, no identity document or biometric data is transferred between Peerlist and Stripe servers.
+
+    **Peerlist does not store or create any copies of your identity data. All your information remains securely on Stripe's highly protected servers**.
+
+    Stripe Identity is built based on expertise they've developed from building a global infrastructure that handles hundreds of billions of dollars in payments annually. Stripe use learnings from building a bank-grade infrastructure to help keep verification data safe as well.
+
+    Stripe transfer verification data via TLS encrypted connections and use AES-256 encryption at rest. To prevent unauthorized access or use of verification data, they've implemented additional access controls to protect your confidential and sensitive information held by Stripe. This will keep the most sensitive data accessible only to those who have reason to access it.
+
+   <a href={STRIPE_DATA_TRANSFERS} target='_blank' rel='noopener noreferrer'>Learn more</a> about the safeguards Stripe have put in place to protect data transfers and control access.
+  </Accordion>
+
+  <Accordion title="Who has access to the verification data captured?">
+    Peerlist will have access to: captured images of the ID document, selfies, extracted data from the ID document, keyed-in information, and the verification result through the Stripe Dashboard and through the API with the use of <a href={STRIPE_ACCESS_VERIFICATION_RESULTS} target='_blank' rel='noopener noreferrer'>restricted API keys</a>.
+
+    **Stripe do not share the biometric identifiers used to verify you with Peerlist.**
+
+    As part of the ID verification process, Stripe may send information, including captured images, addresses, and other information provided to Stripe, to third party service providers for review. Stripe may work with third party service providers to check the submitted information against third party owned and managed data sources (such as government-issued databases and others) to help confirm the identity in question. This will only happen in situations where our automated verification technology cannot make a decision with confidence. These third parties are held to the same <a href={STRIPE_SERVICE_PROVIDERS_LEGAL} target='_blank' rel='noopener noreferrer'>standards</a> we use for sub-processors.
+
+    <a href={`${STRIPE_SERVICE_PROVIDERS_LEGAL}#which-stripe-entities-are-involved`} target='_blank' rel='noopener noreferrer'>Learn more</a> about the Stripe entities involved in processing your personal data.
+  </Accordion>
+</AccordionGroup>
