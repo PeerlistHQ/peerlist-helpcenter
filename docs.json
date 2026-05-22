@@ -46,7 +46,6 @@
               "/individual/launchpad/introduction",
               "/individual/launchpad/guidelines-faqs",
               "/individual/launchpad/how-to-launch-a-project-on-peerlist-launchpad",
-              "/individual/launchpad/what-are-staff-picks",
               "/individual/launchpad/frequently-asked-questions-about-spotlight-by-peerlist"
             ]
           },
@@ -59,7 +58,6 @@
           {
             "group": "Others",
             "pages": [
-              "/individual/referrral-program-terms-and-conditions",
               "/individual/peerlist-streaks"
             ]
           }
