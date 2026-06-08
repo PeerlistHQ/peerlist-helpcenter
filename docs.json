@@ -58,7 +58,8 @@
           {
             "group": "Others",
             "pages": [
-              "/individual/peerlist-streaks"
+              "/individual/peerlist-streaks",
+              "/individual/collections-sunset"
             ]
           }
           
