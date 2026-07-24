@@ -25,7 +25,6 @@
                   "/individual/peerlist-profile/how-to-create-peerlist-profile/projects",
                   "/individual/peerlist-profile/how-to-create-peerlist-profile/resume"
                 ]
-
               },
               "/individual/peerlist-profile/custom-domain",
               {
@@ -51,18 +50,12 @@
           },
           {
             "group": "Scroll",
-            "pages": [
-              "/individual/scroll/what-can-i-post-on-peerlist-scroll"
-            ]
+            "pages": ["/individual/scroll/what-can-i-post-on-peerlist-scroll"]
           },
           {
             "group": "Others",
-            "pages": [
-              "/individual/peerlist-streaks",
-              "/individual/collections-sunset"
-            ]
+            "pages": ["/individual/peerlist-streaks"]
           }
-          
         ]
       },
       {
@@ -81,14 +74,12 @@
               },
               "/company/profile/faqs"
             ]
-            
           },
           {
             "group": "Hiring / Jobs",
             "pages": [
               "/company/hiring-jobs/post-a-job",
               "/company/hiring-jobs/career-site"
-              
             ]
           }
         ]
@@ -103,14 +94,11 @@
               "/legal/privacy-policy",
               "/legal/code-of-conduct",
               "/legal/content-policies"
-              
             ]
           }
-          
         ]
       }
     ]
-   
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -140,15 +128,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
